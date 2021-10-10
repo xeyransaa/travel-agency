@@ -1,0 +1,994 @@
+.discover {
+  position: relative;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.925);
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.discover::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.925);
+  border-radius: 8px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.discover:hover {
+  color: rgba(0, 0, 0, 0.541);
+}
+
+.discover:hover::before {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+.about {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.925);
+  font-size: 13px;
+  border: 2px solid rgba(0, 0, 0, 0.925);
+  margin-right: 30px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.about:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.925);
+}
+
+.header {
+  background-image: url(https://litho.themezaa.com/wp-content/uploads/2020/08/home-travel-agency-slider-img01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header .top-header {
+  padding: 0 50px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+.header .top-header .menu .menu-name {
+  position: relative;
+}
+
+.header .top-header .menu .menu-name a {
+  text-decoration: none;
+  padding: 25px 20px;
+  display: block;
+  color: white;
+}
+
+.header .top-header .menu .menu-name a:hover {
+  color: #86B5C9;
+}
+
+.header .top-header .menu .menu-name .dropped-menu {
+  position: absolute;
+  top: 100%;
+  width: 240px;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li a {
+  color: #828282;
+  padding: 10px 20px;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li a:hover {
+  color: black;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu {
+  position: relative;
+  color: #828282;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu .dropped-side {
+  position: absolute;
+  left: 112%;
+  top: -20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu .side-left {
+  right: 112%;
+  position: absolute;
+  top: -20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu:hover .dropped-side {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu:hover .side-left {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu:hover .sub-sub-menu .sub-side-left {
+  opacity: 0;
+  visibility: visible;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu:hover .sub-sub-menu:hover .sub-side-left {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .menu .menu-name .dropped-menu li.sub-menu i {
+  margin-right: 5px;
+}
+
+.header .top-header .menu .menu-name:hover .dropped-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .contact {
+  color: white;
+}
+
+.header .top-header .contact i {
+  margin-right: 10px;
+}
+
+.header .bottom-header {
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+}
+
+.header .bottom-header h3 {
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+}
+
+.header .bottom-header h1 {
+  font-size: 5.4rem;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 70px;
+}
+
+.header .bottom-header button {
+  padding: 15px 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.925);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.header .bottom-header button a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .bottom-header button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  padding: 18px 0;
+  width: 11%;
+  font-size: 16px;
+  text-align: center;
+  z-index: 5;
+}
+
+aside.demos {
+  bottom: 200px;
+  right: 0%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px 0 black;
+          box-shadow: 0 0 15px 0 black;
+}
+
+aside.buy {
+  bottom: 130px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+}
+
+aside.buy i {
+  color: white;
+}
+
+aside i {
+  margin-right: 10px;
+}
+
+aside:hover {
+  cursor: pointer;
+}
+
+.features {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+}
+
+.features .feature .feature-img {
+  margin-right: 30px;
+}
+
+.features .feature .feature-img i {
+  font-size: 40px;
+  color: #FF7A56;
+}
+
+.features .feature .feature-text h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.video-info {
+  background-image: url(https://litho.themezaa.com/wp-content/uploads/2020/08/home-travel-agency-about-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 150px 0;
+}
+
+.video-info .video {
+  width: 50%;
+}
+
+.video-info .video img {
+  width: 100%;
+}
+
+.video-info .video-text {
+  width: 50%;
+  padding-left: 110px;
+}
+
+.video-info .video-text h2 {
+  font-size: 35px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.video-info .video-text .text {
+  margin-bottom: 45px;
+}
+
+.video-info .video-text .text .text-img {
+  width: 10%;
+}
+
+.video-info .video-text .text .text-info {
+  width: 80%;
+}
+
+.video-info .video-text .text .text-info h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.destinations {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+
+.destinations .dest-head {
+  margin-bottom: 60px;
+}
+
+.destinations .dest-head h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.destinations .dest-head p {
+  font-size: 18px;
+  color: #828282;
+}
+
+.destinations .dest-bot .destination {
+  background-color: black;
+  width: 23%;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.destinations .dest-bot .destination .title {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.destinations .dest-bot .destination .dest-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  padding-top: 35%;
+}
+
+.destinations .dest-bot .destination .dest-arrow a {
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #FF7A56;
+  margin: auto;
+  width: 15%;
+}
+
+.destinations .dest-bot .destination .dest-arrow a i {
+  font-size: 20px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  color: white;
+}
+
+.destinations .dest-bot .destination .dest-link {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.destinations .dest-bot .destination .dest-link a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-bottom: 3px;
+  margin-left: 60px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.destinations .dest-bot .destination img {
+  width: 100%;
+  border-radius: 6px;
+  vertical-align: middle;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  opacity: 0.8;
+}
+
+.destinations .dest-bot .destination:hover {
+  background-color: #1f232c;
+  overflow: hidden;
+}
+
+.destinations .dest-bot .destination:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.destinations .dest-bot .destination:hover .dest-arrow {
+  opacity: 1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.destinations .dest-bot .destination:hover .title {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.destinations .dest-bot .destination:hover .dest-link {
+  opacity: 1;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.slides {
+  padding-top: 100px;
+}
+
+.slides .slide {
+  width: 60%;
+  margin: auto;
+  height: 600px;
+  background-image: url("https://litho.themezaa.com/wp-content/webp-express/webp-images/uploads/2020/08/home-travel-agency-tour-type-img01.jpg.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slides .slide .slide-info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  width: 65%;
+  height: 80%;
+  padding: 70px;
+}
+
+.slides .slide .slide-info .slide-number {
+  color: #FF7A56;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.slides .slide .slide-info .slide-number .separator {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #e4e4e4;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.slides .slide .slide-info h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.slides .slide .slide-info p {
+  color: #828282;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.slides .slide::before {
+  content: "";
+  position: absolute;
+  right: 110%;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://litho.themezaa.com/wp-content/webp-express/webp-images/uploads/2020/08/home-travel-agency-tour-type-img02.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.slides .slide::after {
+  content: "";
+  position: absolute;
+  left: 110%;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://litho.themezaa.com/wp-content/webp-express/webp-images/uploads/2020/09/home-travel-agency-tour-type-img03.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.trips {
+  text-align: center;
+  padding: 120px 0;
+  background-image: url(https://litho.themezaa.com/wp-content/uploads/2020/08/home-travel-agency-tour-intrest-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.trips .trips-top {
+  margin: auto;
+  width: 60%;
+}
+
+.trips .trips-top h1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.trips .trips-middle {
+  margin-bottom: 100px;
+}
+
+.trips .trips-middle .trip {
+  width: 23%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.089);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.089);
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trips .trips-middle .trip img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.trips .trips-middle .trip h4 {
+  margin-bottom: 10px;
+}
+
+.trips .trips-middle .trip p {
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.trips .trips-middle .trip .trip-more {
+  position: absolute;
+  bottom: -30px;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.trips .trips-middle .trip .trip-more a {
+  display: block;
+  width: 100%;
+  height: 15%;
+  border: none;
+}
+
+.trips .trips-middle .trip .trip-more a:hover {
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+}
+
+.trips .trips-middle .trip:hover .trip-more {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 1;
+}
+
+.packages {
+  padding: 120px 0;
+  background-color: #F7F7F7;
+}
+
+.packages .packages-top {
+  margin-bottom: 60px;
+}
+
+.packages .packages-top .packs-top-left h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.packages .packages-top .packs-top-left p {
+  font-size: 18px;
+  color: #828282;
+}
+
+.packages .packs-list .pack {
+  width: 23%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.packages .packs-list .pack .pack-img {
+  width: 100%;
+  position: relative;
+}
+
+.packages .packs-list .pack .pack-img img {
+  width: 100%;
+}
+
+.packages .packs-list .pack .pack-img .pack-price {
+  position: absolute;
+  top: 92%;
+  right: 0%;
+  background-color: #FF7A56;
+  padding: 6px 20px;
+  font-size: 14px;
+  color: white;
+  width: 45%;
+}
+
+.packages .packs-list .pack .pack-info {
+  padding: 30px;
+}
+
+.packages .packs-list .pack .pack-info p {
+  color: #828282;
+  margin-bottom: 15px;
+}
+
+.packages .packs-list .pack .pack-info a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-size: 1.1em;
+}
+
+.packages .packs-list .pack .pack-info a:hover {
+  color: #FF7A56;
+}
+
+.packages .packs-list .pack .pack-info .pack-rating {
+  margin-bottom: 15px;
+}
+
+.packages .packs-list .pack .pack-info .pack-rating i {
+  color: #FF9C00;
+}
+
+.hotels {
+  padding: 120px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.hotels .hotel-left h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.hotels .hotel-left p {
+  color: #828282;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.hotels .hotel {
+  width: 23%;
+  position: relative;
+}
+
+.hotels .hotel img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.hotels .hotel .hotel-head {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 60%;
+}
+
+.hotels .hotel .hotel-head a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hotels .hotel .place {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 5px 15px;
+  background-color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+.hotels .hotel .arrow {
+  position: absolute;
+  bottom: 0%;
+  right: 30px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.hotels .hotel .arrow a {
+  padding: 8px 12px;
+  display: block;
+}
+
+.hotels .hotel:hover .place {
+  color: white;
+  background-color: black;
+}
+
+.hotels .hotel:hover .arrow {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 1;
+}
+
+.subscribe {
+  background-image: url(https://litho.themezaa.com/wp-content/uploads/2020/08/home-travel-agency-bg.jpg);
+  text-align: center;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.subscribe .black {
+  background-color: #1f232c25;
+  opacity: 0.5;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe .subs-content {
+  width: 60%;
+  margin: auto;
+}
+
+.subscribe .subs-content i {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.subscribe .subs-content h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.subscribe .subs-content h3 {
+  font-size: 20px;
+}
+
+.subscribe .sub-form {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  top: 90%;
+  background-color: #FF7A56;
+  height: 20%;
+  border-radius: 8px;
+  padding: 0 100px;
+}
+
+.subscribe .sub-form h2 {
+  color: black;
+  padding: 20px;
+  font-size: 27px;
+}
+
+.subscribe .sub-form .form {
+  width: 55%;
+  height: 50px;
+}
+
+.subscribe .sub-form .form input {
+  width: 70%;
+  padding: 15px;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #f7f7f7;
+}
+
+.subscribe .sub-form .form input:focus {
+  outline: none;
+}
+
+.subscribe .sub-form .form button {
+  width: 30%;
+  background-color: #f7f7f7;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+}
+
+.subscribe .sub-form .form button i {
+  padding: 0 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+.subscribe .sub-form .form button span {
+  font-size: 0.8em;
+}
+
+.subscribe .sub-form .form button:hover i {
+  cursor: pointer;
+}
+
+.subscribe .sub-form .form button:hover span {
+  cursor: pointer;
+}
+
+.reviews {
+  padding: 120px 0;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F7F7F7));
+  background-image: linear-gradient(180deg, #FFF 0%, #F7F7F7 100%);
+}
+
+.reviews .reviews-top {
+  margin-bottom: 60px;
+}
+
+.reviews .reviews-top .reviews-top-left h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.reviews .reviews-top .reviews-top-left p {
+  font-size: 18px;
+  color: #828282;
+}
+
+.reviews .reviews-middle {
+  margin-bottom: 70px;
+}
+
+.reviews .reviews-middle .review {
+  padding: 40px;
+  width: 31%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.534);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.534);
+}
+
+.reviews .reviews-middle .review p {
+  color: #828282;
+}
+
+.reviews .reviews-middle .review .review-top {
+  margin-bottom: 30px;
+}
+
+.reviews .reviews-middle .review .review-top .review-img {
+  width: 25%;
+}
+
+.reviews .reviews-middle .review .review-top .review-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reviews .reviews-middle .review .review-top .review-user {
+  padding-left: 20px;
+}
+
+.reviews .reviews-middle .review .review-top .review-user .review-rating {
+  margin-bottom: 10px;
+}
+
+.reviews .reviews-middle .review .review-top .review-user .review-rating i {
+  color: #FF9C00;
+  font-size: 12px;
+}
+
+.reviews .reviews-bot {
+  text-align: center;
+}
+
+.blogs {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.blogs .blogs-head {
+  margin-bottom: 60px;
+}
+
+.blogs .blogs-head .blogs-head-left h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.blogs .blogs-head .blogs-head-left p {
+  font-size: 18px;
+  color: #828282;
+}
+
+.blogs .blogs-bot .blog {
+  width: 23%;
+}
+
+.blogs .blogs-bot .blog a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.blogs .blogs-bot .blog a:hover {
+  color: #FF7A56;
+}
+
+.blogs .blogs-bot .blog a img {
+  width: 100%;
+}
+
+.blogs .blogs-bot .blog p {
+  font-size: 17px;
+  color: #828282;
+  text-align: justify;
+}
+
+.footer {
+  background-image: url(https://litho.themezaa.com/wp-content/uploads/2020/10/home-travel-agency-footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.footer .footer-links {
+  margin-bottom: 70px;
+}
+
+.footer .footer-links .links h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer .footer-links .links ul li {
+  margin-bottom: 20px;
+}
+
+.footer .footer-links .links ul li a {
+  text-decoration: none;
+  color: #8890A4;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 1.1em;
+}
+
+.footer .footer-links .links ul li a:hover {
+  color: white;
+}
+
+.footer .footer-info {
+  color: #8890A4;
+}
+
+.footer .footer-info .copy h4 a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+/*# sourceMappingURL=style.css.map */
